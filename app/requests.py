@@ -11,10 +11,16 @@ BASE_SOURCE_URL = app.config['SOURCE_URL']
 BASE_ARTICLES_URL = app.config['ARTICLES_URL']
 API_KEY = app.config['NEWS_API_KEY']
 
+
+
 def get_sources():
+    '''
+    function to get the sources
+
+    '''
     source_url = BASE_SOURCE_URL.format(API_KEY)
-    with urllib.request.urlopen(source_url) as source:
-        data = source.read()
+    with urllib.request.urlopen(source_url) as source_url:
+        data = source_url.read()
         response = json.loads(data)
         print(response)
 
@@ -22,14 +28,14 @@ def get_sources():
 
         if response['sources']:
             sources_list = response['sources']
-            results = process_response(sources_list)
+            results = process_source(sources_list)
 
         return results 
 
 
 
     
-def process_response(response):
+def process_source(response):
     list = []
    
     for source in response:
@@ -45,8 +51,29 @@ def process_response(response):
 
 
 def get_source_articles(source_id):
-    pass
+      articles_base_url = BASE_ARTICLES_URL.format(source_id,API_KEY)
+      with urllib.request.urlopen(articles_base_url) as articles_url:
+          data = articles_url.read()
+          response = json.loads(data)
 
+          results  = None
+
+          if response['articles']:
+              article_list = response['articles']
+              results = process_articles(article_list)
+
+          return results
+
+
+def process_articles(reponse):
+    list = []
+    for article in response:
+        if article['urlToImage']:
+            # ,image,title,description,time,source_name,content,url
+            article_instance = Article(article['urlToImage'],article['title'],article['description'],article['publishedAt'],article['source'].name,article['content'],article['url'])
+            list.append(article_instance)
+
+    return list
 
 def get_articles():
     pass
