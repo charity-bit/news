@@ -28,6 +28,7 @@ header {
   position: absolute;
   top: 20%;
   right: 0;
+  color: #042142;
 }
 
 .logo {
@@ -37,7 +38,7 @@ header {
   gap: 5px;
 }
 .logo svg {
-  color: #000;
+  color: #042142;
   height: 2vw;
   width: 2vw;
 }
@@ -61,16 +62,22 @@ nav .nav-links {
 .nav-links li a {
   text-decoration: none;
   font-size: 1vw;
-  color: #000;
+  color: #042142;
   transition: color 0.5s ease-in-out;
 }
 
 .nav-links li a:hover {
   color: #ee453b;
 }
+.nav-links li a:active{
+  color: #ee453b;
+  
+}
 
 .iconify {
   display: none;
+  color: #042142;
+
 }
 
 .hr {

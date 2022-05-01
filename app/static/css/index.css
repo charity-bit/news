@@ -30,6 +30,7 @@
 .side .details h3 {
   font-size: 1vw;
   font-weight: 600;
+  color: #042142;
 }
 .samples .demo {
   width: 70%;
@@ -49,10 +50,12 @@
   font-size: 1.2vw;
   margin-left: 1%;
   margin-bottom: 1%;
+  color: #042142;
 }
 .details h3 {
   font-size: 1.5vw;
   font-weight: 600;
+  color: #042142;
 }
 .details h3 span {
   color: #ee453b;
@@ -73,6 +76,7 @@
   font-size: 1.2vw;
   margin-left: 1%;
   margin-top: 3%;
+  color: #042142;
 }
 
 
