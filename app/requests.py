@@ -36,44 +36,36 @@ def get_sources():
 
     
 def process_source(response):
-    list = []
+    sources_list = []
    
     for source in response:
         if source['url']:
                 # (self,id,name,description,url,category,country):
             source_instance = Source(source['id'],source['name'],source['description'],source['url'],source['category'],source['country'])
-            list.append(source_instance)
-    return list
+            sources_list.append(source_instance)
+    return sources_list
 
   
-
-
-
-
 def get_source_articles(source_id):
-      articles_base_url = BASE_ARTICLES_URL.format(source_id,API_KEY)
-      with urllib.request.urlopen(articles_base_url) as articles_url:
-          data = articles_url.read()
-          response = json.loads(data)
+    articles_base_url = BASE_ARTICLES_URL.format(source_id,API_KEY)
+    with urllib.request.urlopen(articles_base_url) as articles_url:
+        data = articles_url.read()
+        response = json.loads(data)
 
-          results  = None
+        results  = None
 
-          if response['articles']:
-              article_list = response['articles']
-              results = process_articles(article_list)
+        if response['articles']:
+            articles_list = response['articles']
+            results = process_articles(articles_list)
 
-          return results
+        return results
 
 
-def process_articles(reponse):
-    list = []
+def process_articles(response):
+    articles_results = []
     for article in response:
         if article['urlToImage']:
-            # ,image,title,description,time,source_name,content,url
-            article_instance = Article(article['urlToImage'],article['title'],article['description'],article['publishedAt'],article['source'].name,article['content'],article['url'])
-            list.append(article_instance)
+            articles_instance = Article(article['title'],article['source']['name'])
+            articles_results.append(articles_instance)
 
-    return list
-
-def get_articles():
-    pass
+    return articles_results
