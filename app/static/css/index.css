@@ -147,4 +147,89 @@
   color: #042142;
 }
 
+@media screen and (max-width:1000px){
+  /* .sources{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+  } */
+
+  /* .source-info{ */
+    /* background-color: #fef7f8;
+    box-shadow: 0px 2px 3px 2px rgb(254,247,248);
+    width: 32%;
+    padding: 3%;
+    margin: 0 auto;
+  } */
+
+  .sources{
+    gap:10px;
+    
+  }
+  .source-info{
+    width: 30%;
+    margin:0 auto;
+   
+  }
+
+}
+
+@media screen and (max-width:650px){
+
+
+  .sources{
+    gap:10px;
+    
+  }
+  .source-info{
+    width: 45%;
+    margin:0 auto;
+   
+  }
+
+}
+@media screen and (max-width:350px){
+
+
+  .sources{
+    gap:10px;
+    
+  }
+  .source-info{
+    width:100%;
+    margin:0 auto;
+   
+  }
+  .info p:nth-child(1){
+    font-size: 1.3vw;
+  
+  }
+  .info p:nth-child(2) a {
+   
+    font-size: 1.9vw;
+   
+  }
+  .info p:nth-child(3){
+    
+    font-size: 1.4vw;
+  }
+  .info p:nth-child(4) a{
+    
+    font-size: 1.5vw;
+   
+  }
+
+  .source-info svg{
+    height: 4vw;
+    width: 4vw;
+ 
+  }
+
+
+}
+
+
+
 

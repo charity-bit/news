@@ -1,9 +1,10 @@
 {% block styles %}
-
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 <link rel="stylesheet" href="{{url_for('static',filename = 'css/nav.css')}}" />
 {% endblock %}
 
 <header>
+
   <div class="container">
     <div class="top-nav">
       <div class="logo">
@@ -45,9 +46,12 @@
         </svg>
       </div>
     </div>
+    
+     <nav>
 
-    <nav>
-      <ul class="nav-links">
+      <span class="iconify" data-icon="carbon:menu"></span>
+      <ul id="navlinks"
+       class="nav-links">
         <li><a href="{{url_for('index')}}">Home</a></li>
         <li><a href="{{url_for('health')}}">Health</a></li>
         <li><a href="{{url_for('sports')}}">Sports</a></li>
