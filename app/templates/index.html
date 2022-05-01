@@ -1,3 +1,4 @@
+{% import 'macros.html' as macros %}
 {% extends 'base.html' %} {% block styles %}
 <link
   rel="stylesheet"
@@ -63,6 +64,9 @@
 
   <div class="sources">
     <h1 class="title-source">Sources</h1>
+    <div>
+      {{macros.displaySource(sources)}}
+    </div>
 
   </div>
 
