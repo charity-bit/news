@@ -12,8 +12,9 @@
       {% else %}
     <title>1News</title>
     {% endif %}
-    
-    {% block style %}{% endblock %}
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/base.css')}}">
+
+    {% block styles %}{% endblock %}
 </head>
 <body>
 
