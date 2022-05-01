@@ -116,5 +116,31 @@
 .info p:nth-child(3){
   color: #000;
   opacity: .8;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
+}
+
+.info p:nth-child(4){
+  margin-top: 4%;
+  position: relative;
+
+}
+.info p:nth-child(4)::after{
+  position: absolute;
+  content:"";
+  background-color: #042142;
+  height: 2px;
+  width: 10%;
+  left: 0;
+  bottom: 0;
+
+}
+.info p:nth-child(4) a{
+  color:#ee453b;
+  text-decoration: none;
+  font-size: 1vw;
+  font-weight: 600;
+  transition: color .5s ease-in-out;
+}
+.info p:nth-child(4) a:hover{
+  color: #042142;
 }
