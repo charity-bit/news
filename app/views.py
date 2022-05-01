@@ -36,9 +36,9 @@ def entertainment():
     return render_template('entertainment.html',articles = articles)
 
 @app.route('/health')
-def entertainment():
-    articles = get_articles('entertainment')
-    return render_template('entertainment.html',articles = articles)
+def health():
+    articles = get_articles('health')
+    return render_template('health.html',articles = articles)
 
 
 
