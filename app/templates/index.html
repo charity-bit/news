@@ -1,5 +1,70 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block styles %}
+<link
+  rel="stylesheet"
+  href="{{url_for('static',filename = 'css/index.css')}}"
+/>
 
-{% block content %}
- 
-    {% endblock %}
+{% endblock %} {% block content %}
+
+<div class="main">
+  <h1 class="title">Top News</h1>
+
+  <div class="samples">
+    <div class="demo">
+      <img src="{{url_for('static', filename = '/images/img.jpg')}}" alt="" />
+      <div class="details">
+        <h3>
+          Beijing shuts Universal Studios, bans restaurant dining in major
+          escalation of Covid restrictions -<span> CNN </span>
+        </h3>
+        <p>
+          Beijing has banned all restaurant dining, shut down Universal Studios
+          and ordered residents to provide proof of a negative Covid test to
+          enter public venues in a major escalation of restrictions as a
+          five-day holiday gets underway.
+        </p>
+      </div>
+    </div>
+    <div class="side">
+      <div class="demo2">
+        <img
+          src="{{url_for('static', filename = '/images/img2.webp')}}"
+          alt=""
+        />
+        <div class="details">
+          <h3>
+            Latest Russia-Ukraine war news: Live updates -
+            <span>The Washington Post</span>
+          </h3>
+          <p>
+            Nancy Pelosi's visit with U.S. lawmakers came as evacuations from
+            Mariupol's Azovstal steel plant were expected to continue.
+          </p>
+        </div>
+      </div>
+      <div class="demo3">
+        <img
+          src="{{url_for('static', filename = '/images/img3.webp')}}"
+          alt=""
+        />
+        <div class="details">
+          <h3>
+            Johnny Depp and Amber Heard Trial Includes Christian Carino -
+            <span>The Daily Beast</span>
+          </h3>
+          <p>
+            In arguing that his ex-wife Amber Heard defamed him, the actor
+            accused of abuse has called on a curious cast of characters.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sources">
+    <h1 class="title-source">Sources</h1>
+
+  </div>
+
+  {% endblock %}
+</div>
