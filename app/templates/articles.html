@@ -1,4 +1,10 @@
-{% extends 'base.html' %}
-{% block content %}
- 
+{% block styles %}
+<link
+  rel="stylesheet"
+  href="{{url_for('static',filename = 'css/articles.css')}}"
+/>
+
+{% endblock %} {% import 'macros.html' as macros %} {% extends 'base.html' %} {%
+block content %}
+<div>{{macros.displayArticles(articles)}}</div>
 {% endblock %}

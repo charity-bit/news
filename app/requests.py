@@ -65,7 +65,8 @@ def process_articles(response):
     articles_results = []
     for article in response:
         if article['urlToImage']:
-            articles_instance = Article(article['title'],article['source']['name'])
+            # image,title,description,time,source_name,url,content)
+            articles_instance = Article(article['urlToImage'],article['title'],article['description'],article['publishedAt'],article['source']['name'],article['url'],article['content'])
             articles_results.append(articles_instance)
 
     return articles_results
