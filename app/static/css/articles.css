@@ -1,0 +1,79 @@
+/* MACRO ARTICLES */
+
+.articles {
+  width: 80%;
+  margin: 4% auto;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.dits {
+  padding: 3%;
+}
+.articles-info {
+  width: 90%;
+  margin: 0 auto;
+
+  background-color: #fef7f8;
+}
+.source h3 {
+  font-size: 1vw;
+}
+.source p {
+  color: #636363;
+  font-size: 0.8vw;
+}
+.source {
+  position: relative;
+  margin-left: 2%;
+}
+.source::before {
+  display: inline;
+  content: "";
+  background-color: #042142;
+  position: absolute;
+  left: -1%;
+  top: 0;
+  height: 100%;
+  width: 0.2%;
+}
+
+.articles-info h1 {
+  color: #042142;
+  margin: 2% 0;
+  font-size: 2.5vw;
+}
+
+.link {
+  position: relative;
+  margin-top: 1%;
+}
+.link a {
+  text-decoration: none;
+  font-size: 1vw;
+  color: #ee453b;
+  font-weight: 600;
+}
+.link::after {
+  position: absolute;
+  content: "";
+  background-color: #042142;
+  height: 2px;
+  width: 7%;
+  left: 0;
+  bottom: 0;
+}
+.articles-info img {
+  margin-top: 2%;
+  height: auto;
+  width: 100%;
+}
+
+.descript {
+  color: #042142;
+  opacity: 0.8;
+  font-size: 1.1vw;
+  line-height: 2vw;
+}
