@@ -9,7 +9,11 @@ class Config:
   
 
 class ProdConfig(Config):
-    pass
+    ARTICLES_URL = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'
+    GENERAL_URL = 'https://newsapi.org/v2/top-headlines?language=en&category={}&apiKey={}'
+    SOURCE_URL = 'https://newsapi.org/v2/top-headlines/sources?apiKey={}'
+    NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
+    
 
 
 class DevConfig(Config):
