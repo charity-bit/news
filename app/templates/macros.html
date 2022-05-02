@@ -1,0 +1,66 @@
+{% macro displaySource(source_list) %}
+<div class="sources">
+  {% for source in source_list %}
+
+  <div class="source-info">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      role="img"
+      width="1em"
+      height="1em"
+      preserveAspectRatio="xMidYMid meet"
+      viewBox="0 0 48 48"
+    >
+      <path
+        fill="none"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M38.36 6.19h-1.07a1.79 1.79 0 0 0-3.57 0H14.3a1.79 1.79 0 0 0-3.57 0H9.66A2.88 2.88 0 0 0 6.76 9v3.68h34.48V9.06a2.87 2.87 0 0 0-2.86-2.87Zm2.88 6.52H6.76v28a2.85 2.85 0 0 0 2.86 2.86h28.74a2.86 2.86 0 0 0 2.88-2.85h0Zm-28.86 6.04h23.24M12.5 25h18.82m-18.94 6.25h23.24M12.5 37.5h18.82"
+      />
+    </svg>
+    <div class="info">
+      <p>{{source.category}} | {{source.country}}</p>
+      <p class="nm" title="visit">
+        <a href="{{source.url}}">{{source.name}}</a>
+      </p>
+      <p class="desc">{{source.description}}</p>
+      <p><a href="/articles/{{source.id}}">Read Articles</a></p>
+    </div>
+  </div>
+
+  {% endfor %}
+</div>
+{% endmacro %} 
+
+{% macro displayArticles(article_list) %}
+
+<div class="articles">
+  {% for article in article_list %}
+  <div class="articles-info">
+
+    <div class="dits">
+      <div class="source">
+
+     
+        <p id="time">{{article.time}}</p>
+        <h3>{{article.source_name}}</h3>
+      
+      </div>
+      <h1>{{article.title}}</h1>
+      <p class="descript">{{article.description}}</p>
+      <p class="link"><a href="{{article.url}}">Read More</a></p>
+    </div>
+  
+    <img src="{{article.image}}" alt="" />
+  </div>
+
+  {% endfor %}
+</div>
+
+{% endmacro %}
+
+
+    
+    
