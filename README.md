@@ -38,6 +38,7 @@
 
 
 
+
 ## Description
 
 <p>New-zzz is an apllication that consumes news API to display news articles from various sources in different categories such as business, sports, entertainment ,health and technology </p>
@@ -77,7 +78,7 @@ pip3
 
 ## Licence
 
-   copyright © Charity 2022 - <a href="">MIT</a>
+   copyright © Charity 2022 - <a href="https://github.com/charity-bit/news/blob/main/LICENSE">MIT</a>
 
 ## Authors Info
 
