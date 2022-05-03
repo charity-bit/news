@@ -21,17 +21,6 @@
 <img src="./images/sources.png" alt="sources">
 
 <br>
-<br>
-
-<h1>articles by various sources</h1>
-<img src="./images/articles.png" alt="articles">
-
-<br>
-<br>
-
-<h1>Entertainment page</h1>
-<img src="./images/ent.png" alt="entertainment">
-
 
 
 
@@ -42,6 +31,8 @@
 ## Description
 
 <p>New-zzz is an apllication that consumes news API to display news articles from various sources in different categories such as business, sports, entertainment ,health and technology </p>
+
+<p>See Live site <a>here<a/> </p>
 
 ## Installation
 
