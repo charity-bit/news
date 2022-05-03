@@ -61,9 +61,10 @@
 <ul>
 <li>
 python3.9.5
-<li>
-<li>
+ </li>
+  <li>
 Flask 2.0.0
+   </li>
 <li>
 pip3
 <li>
