@@ -32,7 +32,7 @@
 
 <p>New-zzz is an apllication that consumes news API to display news articles from various sources in different categories such as business, sports, entertainment ,health and technology </p>
 
-<p>See Live site <a>here<a/> </p>
+<p>See Live site <a href="#">here<a/> </p>
 
 ## Installation
 
