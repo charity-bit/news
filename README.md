@@ -82,7 +82,7 @@ pip3
 
 ## Authors Info
 
--LinkedIn - [Charity Nyanchera](https://www.linkedin.com/in/charitynyanchera
+-LinkedIn - [Charity Nyanchera](https://www.linkedin.com/in/charitynyanchera)
 
 -twitter - [CcNyanchera](https://twitter.com/CcNyanchera)
 
