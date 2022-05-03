@@ -4,8 +4,14 @@
   href="{{url_for('static',filename = 'css/error.css')}}"
 />
 
-{% endblock %} 
-{% extends 'base.html' %} {%
-block content %}
-   <h4>404</h4>
+{% endblock %} {% extends 'base.html' %} {% block content %}
+
+<div class="error">
+  <p>SORRY,404</p>
+ 
+  <img src="{{url_for('static', filename = '/images/error.png')}}" alt="error">
+  <p>Page Not Found</p>
+  <a href="{{url_for('.index')}}" class="back">Go back</a>
+</div>
+
 {% endblock %}
