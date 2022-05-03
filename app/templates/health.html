@@ -1,10 +1,20 @@
 {% block styles %}
+
 <link
   rel="stylesheet"
   href="{{url_for('static',filename = 'css/articles.css')}}"
 />
 
-{% endblock %} {% import 'macros.html' as macros %} {% extends 'base.html' %} {%
-block content %}
-<div>{{macros.displayArticles(articles)}}</div>
+
+
+{% endblock %} {% import 'macros.html' as macros %} {% extends 'base.html' %}
+
+
+ {% block content %}
+
+  
+ <h3 style="color: #042142; margin-left: 17%; text-decoration: underline;margin-bottom: -5%;">{{title}}</h3>
+<div>
+
+  {{macros.displayArticles(articles)}}</div>
 {% endblock %}

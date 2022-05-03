@@ -1,9 +1,12 @@
 /* MACRO ARTICLES */
 
-.articles {
+.articles{
   width: 80%;
-  margin: 4% auto;
-  padding: 2%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  margin-right: auto;
+  margin-left: auto;
+  padding:2%;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -77,3 +80,4 @@
   font-size: 1.1vw;
   line-height: 2vw;
 }
+
