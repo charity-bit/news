@@ -10,7 +10,7 @@
 - [Authors Info](#author-Info)
 - [ToDO](#To-Do)
 
-<!-- <br>
+<br>
 <h1>Home</h1>
 <img src="./images/home.png" alt="home">
 
@@ -21,7 +21,7 @@
 <img src="./images/sources.png" alt="sources">
 
 <br>
- -->
+
 
 
 
