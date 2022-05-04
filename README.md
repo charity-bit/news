@@ -30,7 +30,7 @@
 
 ## Description
 
-<p>New-zzz is an apllication that consumes news API to display news articles from various sources in different categories such as business, sports, entertainment ,health and technology </p>
+<p>New-zzz is an application that consumes news API to display news articles from various sources in different categories such as business, sports, entertainment ,health and technology </p>
 
 <p>See Live site <a href="#">here<a/> </p>
 
